@@ -1,6 +1,8 @@
 from app.Config import config
 from PIL import Image, ImageTk
 import customtkinter as ctk
+from CTkMessagebox import CTkMessagebox
+import threading
 import time
 
 def font_style(font_style='Segoe UI Emoji', size=16, style='bold'):
@@ -23,7 +25,15 @@ def fade_out(window):
         window.destroy() 
 
 def on_closing(self):
-    fade_out(self)
+    question = CTkMessagebox(title='Выход',
+                                  message='Вы действительно хотите выйти?',
+                                  option_2='Да',
+                                  option_1='Нет')
+    if question.get() == 'Да':
+        threading.Thread(target=self.click_sound).start()
+        fade_out(self)
+    else:
+        threading.Thread(target=self.click_sound).start()
 
 def load_gif(path):
     img = Image.open(path)
