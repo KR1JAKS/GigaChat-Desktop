@@ -3,7 +3,7 @@ import winsound
 import threading
 from app.Config import config
 
-giga = GigaChat(credentials="YTFjMDk5ZDUtNzcwNC00OTQ5LWE3NTQtMmM1MzYyZmI1MWI5OjI0OTU0NTkwLTA2ZjAtNGY3ZS1hNzI5LWNlNjE4NTU4YzBhZQ==", 
+giga = GigaChat(credentials="Authorization Key", #Замените Authorization Key на свой
                 verify_ssl_certs=False)
 
 def success():
