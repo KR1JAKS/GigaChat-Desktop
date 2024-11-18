@@ -47,5 +47,5 @@ https://developers.sber.ru/portal/products/gigachat-api?ysclid=m3lhu7v1le9585357
 
 ## Ниже представлен пример работы приложения
 <div align="center">
-<img src="https://s6.ezgif.com/tmp/ezgif-6-ac488f3bad.gif" alt="Описание GIF" />
+<img src="https://i.imgur.com/4cvVB3u.gif" alt="Описание GIF" />
 </div>
